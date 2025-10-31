@@ -15,12 +15,9 @@ func main() {
 	_ = godotenv.Load()
 
 	r := gin.Default()
+	r.SetTrustedProxies(nil)
 
-	// front := os.Getenv("FRONTEND_URL")
-	// if front == "" {
-	// 	front = "http://localhost:3000"
-	// }
-	front := "https://front-end-next-js-v1-gj6b2uz5m-satriaan-jpas-projects.vercel.app/"
+	front := "https://front-end-next-js-v1-gj6b2uz5m-satriaan-jpas-projects.vercel.app"
 
 	origins := strings.Split(front, ",")
 
