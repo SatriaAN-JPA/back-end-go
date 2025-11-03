@@ -17,7 +17,7 @@ func main() {
 	r := gin.Default()
 	r.SetTrustedProxies(nil)
 
-	front := "https://front-end-next-js-v1-gj6b2uz5m-satriaan-jpas-projects.vercel.app"
+	front := "https://front-end-next-js-v1.vercel.app"
 
 	origins := strings.Split(front, ",")
 
